@@ -8,7 +8,7 @@ export default defineConfig({
     'process.env': process.env
 
   },
-  base: '/website/',
+  // base: '/website/',
   css: {
     postcss,
   },
