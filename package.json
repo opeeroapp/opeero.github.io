@@ -1,6 +1,8 @@
 {
   "name": "appy-react",
   "version": "0.1.0",
+  "homepage": "https://opeeroapp.github.io/website",
+  "predeploy": "npm run build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
