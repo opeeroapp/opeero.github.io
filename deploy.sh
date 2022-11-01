@@ -13,7 +13,7 @@ cd dist
 echo > .nojekyll
 
 # if you are deploying to a custom domain
-# echo 'www.opeero.com' > CNAME
+echo 'www.opeero.com' > CNAME
 
 git init
 git checkout main
