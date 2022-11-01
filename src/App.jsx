@@ -18,6 +18,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Help from './pages/Help';
 import PageNotFound from './pages/PageNotFound';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'G-VS4CDLVYP7';
 
 function App() {
 
@@ -30,9 +33,11 @@ function App() {
       duration: 750,
       easing: 'ease-out-quart',
     });
+    ReactGA.initialize(TRACKING_ID);
   });
 
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     document.querySelector('html').style.scrollBehavior = 'auto'
     window.scroll({ top: 0 })
     document.querySelector('html').style.scrollBehavior = ''

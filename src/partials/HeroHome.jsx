@@ -7,6 +7,7 @@ import MockupImage from '../images/mockup-image-01.jpg';
 import IphoneMockup from '../images/iphone-mockup.png';
 import { boxStyle, boxStyleMobile, divLogoStyle } from '../utils/style';
 import PlayBtn from '../images/play-button.svg';
+import ReactGA from 'react-ga';
 
 import desktopLogo from '../images/logo-main.svg';
 
@@ -20,6 +21,7 @@ function HeroHome() {
     e.preventDefault();
     e.stopPropagation();
     setFormModalOpen(true);
+    ReactGA.event({category: 'Contact', action: 'openOrganizerDemoModal', label: 'organizer demo modal'});
   }
   
 
